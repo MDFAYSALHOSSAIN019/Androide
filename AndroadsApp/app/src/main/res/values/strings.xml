@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">testAndroadproject</string>
     <string name="faysalText">My name is faysal hossain. I am a tree</string>
+    <string-array name="spinnerText">
+        <item>My</item>
+        <item>Name</item>
+        <item>Is</item>
+        <item>Faysal</item>
+        <item>Hossain</item>
+    </string-array>
 </resources>

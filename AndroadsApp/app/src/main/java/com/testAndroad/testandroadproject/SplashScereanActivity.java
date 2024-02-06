@@ -22,30 +22,31 @@ public class SplashScereanActivity extends AppCompatActivity {
 
         Animation animation= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom_in);
 
-//        ImageView splashLogo=findViewById(R.id.spleshlogo);
-//        splashLogo.setAnimation(animation);
-//
-//        animation.setAnimationListener(new Animation.AnimationListener() {
-//            @Override
-//            public void onAnimationStart(Animation animation) {
-//
-//            }
-//
-//            @Override
-//            public void onAnimationEnd(Animation animation) {
-//
-//                Intent intent=new Intent(getApplicationContext(),Home.class);
-//                startActivity(intent);
-//
-//
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat(Animation animation) {
-//
-//            }
-//        });
-//
+        ImageView splashLogo=findViewById(R.id.splashlogo);
+        splashLogo.setAnimation(animation);
+
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+
+                Intent intent=new Intent(getApplicationContext(),Home.class);
+                startActivity(intent);
+                finish();
+
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
 
     }
 }

@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScereanActivity">
+    tools:context=".ClubMemberAct">
 
-
-    <ImageView
-        android:id="@+id/splashlogo"
-        android:layout_width="349dp"
-        android:layout_height="598dp"
-        android:src="@drawable/smile"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="409dp"
+        android:layout_height="889dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

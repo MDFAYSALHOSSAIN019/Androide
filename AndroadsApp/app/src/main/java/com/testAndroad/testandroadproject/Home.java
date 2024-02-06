@@ -11,6 +11,7 @@ public class Home extends AppCompatActivity {
 
 
     private Button buttonContact;
+    private Button viewmember;
 
 
     @Override
@@ -19,7 +20,6 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         buttonContact=findViewById(R.id.button2);
-
         buttonContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +28,16 @@ public class Home extends AppCompatActivity {
             }
         });
 
-        buttonContact=findViewById(R.id.button2);
+
+
+        viewmember=findViewById(R.id.btngallary);
+        viewmember.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Home.this, ViewMember.class);
+                startActivity(intent);
+            }
+        });
 
 
 
